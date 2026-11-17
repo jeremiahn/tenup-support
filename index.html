@@ -1,76 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>Ten Up Support</title>
-<meta name="description" content="Help and contact information for Ten Up, a rummy-style card game for iPhone.">
-<style>
-  :root {
-    --bg-top: #124a52; --bg-bottom: #082630;
-    --text: #eaf2f2; --muted: #a9c2c4; --accent: #ffd14d;
-    --panel: rgba(255, 255, 255, 0.07); --rule: rgba(255, 255, 255, 0.14);
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; min-height: 100vh; color: var(--text);
-    background: var(--bg-bottom) linear-gradient(var(--bg-top), var(--bg-bottom)) no-repeat;
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
-  .stripe { display: flex; gap: 6px; margin-bottom: 20px; }
-  .stripe span { width: 28px; height: 40px; border-radius: 5px; }
-  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 8px; font-weight: 800; }
-  h2 { font-size: 1.25rem; margin: 40px 0 12px; }
-  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
-  p { margin: 0 0 12px; }
-  .lede { color: var(--muted); font-size: 1.1rem; }
-  a { color: var(--accent); }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .contact { background: var(--panel); border-radius: 14px; padding: 20px; margin-top: 28px; }
-  .contact a { font-size: 1.15rem; font-weight: 600; word-break: break-all; }
-  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px; color: var(--muted); font-size: 0.9rem; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ten Up Support</title>
+    <meta name="description" content="Help and contact information for Ten Up, a rummy-style card game for iPhone.">
+    <link rel="icon" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <div class="stripe" aria-hidden="true">
-    <span style="background:#db4045"></span><span style="background:#2e6ed6"></span>
-    <span style="background:#26995c"></span><span style="background:#f5bd29"></span>
-  </div>
-  <h1>Ten Up Support</h1>
-  <p class="lede">Ten Up is a rummy-style card game for iPhone. You work through ten phases against computer opponents.</p>
 
-  <section class="contact">
-    <p>Questions, problems or suggestions? Send an email to</p>
-    <p><a href="mailto:info@nelsoncomputers.com?subject=Ten%20Up%20support">info@nelsoncomputers.com</a></p>
-    <p>If you're reporting a problem, include your iPhone model, your iOS version and what happened just before it.</p>
-  </section>
+    <header>
+        <nav>
+            <a href="./" class="nav-logo"><img src="icon.png" alt="">Ten Up</a>
+            <div class="nav-links">
+                <a href="./" aria-current="page">Support</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </nav>
+    </header>
 
-  <h2>Common questions</h2>
+    <main>
+        <section class="hero">
+            <img src="icon.png" alt="Ten Up app icon">
+            <h1>Ten Up Support.</h1>
+            <h2>A rummy-style card game for iPhone. Ten phases, no ads.</h2>
+            <div class="cta-links">
+                <a href="mailto:info@nelsoncomputers.com?subject=Ten%20Up%20support">Email support &gt;</a>
+            </div>
+        </section>
 
-  <h3>How do I learn the rules?</h3>
-  <p>The full rules are in the app. During a game, tap the book icon at the top of the screen. If you aren't sure what to lay down, tap Find Phase with no cards selected and it highlights a phase you can play.</p>
+        <section class="section-grid" aria-labelledby="faq">
+            <h2 id="faq">Common questions.</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>How do I learn the rules?</h3>
+                    <p>During a game, tap the book icon at the top of the screen. Not sure what to lay down? Tap Find Phase with no cards selected to see a phase you can play.</p>
+                </div>
+                <div class="card">
+                    <h3>Is my game saved?</h3>
+                    <p>Yes. Ten Up saves automatically, so you can close the app and pick up where you left off. Deleting the app also deletes the saved game.</p>
+                </div>
+                <div class="card">
+                    <h3>Can I play with friends?</h3>
+                    <p>Ten Up is single-player. You play against 1 to 5 computer opponents at Easy, Normal or Hard difficulty.</p>
+                </div>
+                <div class="card">
+                    <h3>Do I need internet?</h3>
+                    <p>No. Ten Up works fully offline.</p>
+                </div>
+                <div class="card">
+                    <h3>Ads or purchases?</h3>
+                    <p>None. There are no ads, no in-app purchases and no accounts.</p>
+                </div>
+                <div class="card">
+                    <h3>Which devices?</h3>
+                    <p>iPhone with iOS 26 or later.</p>
+                </div>
+            </div>
+        </section>
 
-  <h3>Is my game saved?</h3>
-  <p>Yes. Your game saves automatically on your iPhone, so you can close the app and pick up where you left off. Deleting the app also deletes the saved game.</p>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Still need help?</h2>
+                <p>Send a question, a problem or an idea.</p>
+                <a href="mailto:info@nelsoncomputers.com?subject=Ten%20Up%20support" class="btn">Email Us</a>
+                <p class="note">If you're reporting a problem, include your iPhone model, your iOS version and what happened just before it.</p>
+            </div>
+        </section>
+    </main>
 
-  <h3>Can I play with friends online?</h3>
-  <p>No. Ten Up is a single-player game against 1 to 5 computer opponents, at Easy, Normal or Hard difficulty.</p>
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2026 Nelson Computers, LLC. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
 
-  <h3>Does it need an internet connection?</h3>
-  <p>No. Ten Up works fully offline.</p>
-
-  <h3>Are there ads or in-app purchases?</h3>
-  <p>No. There are no ads, no in-app purchases and no accounts.</p>
-
-  <h3>Which devices does it run on?</h3>
-  <p>iPhone with iOS 26 or later.</p>
-
-  <footer>
-    <p><a href="privacy.html">Privacy Policy</a></p>
-  </footer>
-</main>
 </body>
 </html>
